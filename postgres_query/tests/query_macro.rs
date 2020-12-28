@@ -107,8 +107,8 @@ fn sql_eq(a: &dyn ToSql, b: &dyn ToSql, ty: &Type) -> bool {
     let mut a_buffer = BytesMut::new();
     let mut b_buffer = BytesMut::new();
 
-    let a_result = a.to_sql_checked(ty, &mut a_buffer);
-    let b_result = b.to_sql_checked(ty, &mut b_buffer);
+    let a_result = a.to_sql_checked(ty, &mut bytes::BytesMut::a_buffer);
+    let b_result = b.to_sql_checked(ty, &mut bytes::BytesMut::b_buffer);
 
     let is_null = |null| match null {
         IsNull::Yes => true,

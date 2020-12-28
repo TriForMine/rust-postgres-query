@@ -23,11 +23,11 @@ serde = "1.0.118"
 tokio-postgres = "0.7.0"
 deadpool-postgres = "0.7.0"
 futures = "0.3.8"
-async-trait = "0.1.41"
-thiserror = "1.0.22"
+async-trait = "0.1.42"
+thiserror = "1.0.23"
 
 [dev-dependencies]
 bytes = "0.6.0"
 tokio = { version = "1.0.1", features = ["macros", "rt-multi-thread"] }
-structopt = "0.3.20"
-anyhow = "1.0.34"
+structopt = "0.3.21"
+anyhow = "1.0.37"

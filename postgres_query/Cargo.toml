@@ -18,8 +18,8 @@ path = "examples/basic.rs"
 [dependencies]
 postgres_query_macro = { version = "0.3.1", path = "../postgres_query_macro" }
 proc-macro-hack = "0.5.19"
-postgres-types = "0.1.2"
-serde = "1.0.118"
+postgres-types = "0.1.0"
+serde = "1.0.104"
 tokio-postgres = "0.5.1"
 deadpool-postgres = "0.5.6"
 futures = "0.3.8"
@@ -28,6 +28,6 @@ thiserror = "1.0.23"
 
 [dev-dependencies]
 bytes = "0.6.0"
-tokio = { version = "0.2", features = ["macros", "rt-threaded"] }
+tokio = { version = "0.2.6", features = ["macros"] }
 structopt = "0.3.21"
 anyhow = "1.0.37"

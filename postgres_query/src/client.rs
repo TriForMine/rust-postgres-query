@@ -5,9 +5,9 @@ mod cache;
 pub use cache::Caching;
 
 use async_trait::async_trait;
+use deadpool_postgres::Client as DPClient;
 use postgres_types::ToSql;
 use tokio_postgres::{error::Error as SqlError, Client, RowStream, Statement, Transaction};
-use deadpool_postgres::{Client as DPClient};
 
 /// A generic client with basic functionality.
 #[async_trait]

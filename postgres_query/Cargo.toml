@@ -1,6 +1,6 @@
 [package]
 name = "postgres_query"
-version = "0.3.3"
+version = "0.3.4"
 authors = ["Christofer Nolander <christofer.nolander@gmail.com>"]
 edition = "2018"
 description = "Write and execute SQL queries with ease"
@@ -16,18 +16,18 @@ name = "basic"
 path = "examples/basic.rs"
 
 [dependencies]
-postgres_query_macro = { version = "0.3.1", path = "../postgres_query_macro" }
-proc-macro-hack = "0.5.11"
-postgres-types = "0.1.0"
-serde = "1.0.104"
-tokio-postgres = "0.5.1"
-deadpool-postgres = "0.5.6"
-futures = "0.3.1"
-async-trait = "0.1.22"
-thiserror = "1.0.9"
+postgres_query_macro = { version = "0.3.3", path = "../postgres_query_macro" }
+proc-macro-hack = "0.5.19"
+postgres-types = "0.2.0"
+serde = "1.0.118"
+tokio-postgres = "0.7.0"
+deadpool-postgres = "0.7.0"
+futures = "0.3.8"
+async-trait = "0.1.42"
+thiserror = "1.0.23"
 
 [dev-dependencies]
-bytes = "0.5.3"
-tokio = { version = "0.2.6", features = ["macros"] }
-structopt = "0.3.7"
-anyhow = "1.0.26"
+bytes = "0.6.0"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+structopt = "0.3.21"
+anyhow = "1.0.37"
